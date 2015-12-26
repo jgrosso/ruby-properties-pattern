@@ -1,8 +1,9 @@
-# PropertiesPattern
+# Properties Pattern
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/properties_pattern`. To experiment with that code, run `bin/console` for an interactive prompt.
+[![Gem Version](https://badge.fury.io/rb/properties_pattern.svg)](https://badge.fury.io/rb/properties_pattern)
+[![Code Climate](https://codeclimate.com/github/jgrosso/ruby-properties-pattern/badges/gpa.svg)](https://codeclimate.com/github/jgrosso/ruby-properties-pattern)
 
-TODO: Delete this and the text above, and describe your gem
+Use the Properties pattern (e.g. JavaScript's object system) in Ruby.
 
 ## Installation
 
@@ -22,7 +23,17 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Create a new object with `Properties::BASE.inherit new_properties_hash`, *NOT* `Properties.new` (otherwise, prototypes will not work out of the box).
+
+Inherit from an existing object with `existing_object.inherit new_properties_hash`
+
+Get property from object or it's prototype chain with `existing_object.get property_name`
+
+Set property in object with `existing_object.put property_name, property_value`
+
+See if object has property with `existing_object.has? property_name`
+
+Remove property from object with `existing_object.remove property_name`
 
 ## Development
 
@@ -33,7 +44,6 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 ## Contributing
 
 Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/properties_pattern. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](contributor-covenant.org) code of conduct.
-
 
 ## License
 
