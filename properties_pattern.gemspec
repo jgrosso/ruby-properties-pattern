@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Joshua Grosso']
   spec.email         = ['jgrosso@dynamynd.com']
 
-  spec.summary       = %q{Use prototypal objects in Ruby.}
+  spec.summary       = %q{Use the Properties pattern (e.g. prototypal objects, like in JavaScript's object system) in Ruby.}
   # spec.description   = %q{TODO: Write a longer description or delete this line.}
   spec.homepage      = 'https://www.github.com/jgrosso/ruby-properties-pattern'
   spec.license       = 'MIT'
